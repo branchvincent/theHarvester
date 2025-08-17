@@ -31,7 +31,7 @@ dependencies = [
     "lxml==6.0.2",
     "netaddr==1.3.0",
     "playwright==1.55.0",
-    "PyYAML==6.0.2",
+    "PyYAML==6.0.3",
     "python-dateutil==2.9.0.post0",
     "httpx==0.28.1",
     "retrying==1.4.2",
@@ -43,7 +43,7 @@ dependencies = [
     "winloop==0.3.1; platform_system == 'Windows'",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "mypy==1.18.2",
     "mypy-extensions==1.1.0",
