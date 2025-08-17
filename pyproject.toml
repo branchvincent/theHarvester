@@ -43,7 +43,7 @@ dependencies = [
     "winloop==0.3.1; platform_system == 'Windows'",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "mypy==1.18.2",
     "mypy-extensions==1.1.0",
