@@ -38,11 +38,6 @@ Run theHarvester:
 
 ## Development
 
-To install development dependencies:
-```bash
-uv sync --extra dev
-```
-
 To run tests:
 ```bash
 uv run pytest
