@@ -14,7 +14,7 @@ import certifi
 import ujson as json_loader
 import yaml
 
-from .version import version
+from theHarvester import __version__
 
 if TYPE_CHECKING:
     from collections.abc import Sized
@@ -61,6 +61,10 @@ class Core:
     @staticmethod
     def bing_key() -> str:
         return Core.api_keys()['bing']['key']
+
+    @staticmethod
+    def brave_key() -> str:
+        return Core.api_keys()['brave']['key']
 
     @staticmethod
     def bufferoverun_key() -> str:
@@ -181,7 +185,7 @@ class Core:
         print(r'* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *')
         print(r'*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *')
         print('*                                                                 *')
-        print('* theHarvester {version}{filler}*'.format(version=version(), filler=' ' * (51 - len(version()))))
+        print('* theHarvester {version}{filler}*'.format(version=__version__, filler=' ' * (51 - len(__version__))))
         print('* Coded by Christian Martorella                                   *')
         print('* Edge-Security Research                                          *')
         print('* cmartorella@edge-security.com                                   *')
